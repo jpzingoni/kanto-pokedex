@@ -6,11 +6,16 @@ body{
     /* background-position: center; */
 }
 
+p{
+    text-transform:uppercase;
+    
+}
 header{
     display: flex;
     justify-content: space-between;
     background-color: #E32D1F;
     padding: 10px;
+    align-items: center;
 }
 
 .header-icon{
@@ -18,11 +23,43 @@ header{
     width: 40px;
 }
 
+#titulo-principal{
+    font-family: 'Oswald', sans-serif;
+}
+
+#buscador-pokemon{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 10px;
+    height: 10%;
+    justify-content: end;
+    padding: 5px;
+}
+
+#pokemon-list-label{
+    font-family: 'Oswald', sans-serif;
+    
+}
+
+#pokemon-list{
+    font-family: 'Montserrat', sans-serif;
+    color: black;
+    text-transform:uppercase;
+}
+
+#buscar-pokemon{
+    margin-top: 5px;
+    margin-bottom: 5px;
+    font-family: 'Montserrat', sans-serif;
+}
+
+
 #contenedor-pokedex{
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 70%;
+    height: 40%;
 }
 
 #loading-image{
@@ -32,18 +69,25 @@ header{
     transition: opacity 3s ease-in-out;
 }
 
-
-
 #textos{
     display: flex;
     justify-content: space-between;
     margin-left: 50px;
     margin-right: 50px;
+}
 
+.texto-principal{
+    font-size: 25px;
+    font-family: 'Oswald', sans-serif;
+}
+
+.texto-secundario{
+    font-family: 'Montserrat', sans-serif;
+    font-size: 18px;
 }
 #borde-contenedor{
     border-radius: 20px;
-    border: solid black 1px;
+    border: solid #E32D1F 2px;
     width: 50%;
     margin: 5px;
 }

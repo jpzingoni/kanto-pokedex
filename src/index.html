@@ -3,7 +3,10 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Kanto Pokedex</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;700&family=Oswald&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
@@ -12,9 +15,25 @@
             <img class="header-icon" src="images/wizards.png" alt="wizard-icon">
         </div>
         <div>
+            <h1 id="titulo-principal">KANTO POKEDEX</h1>
+        </div>
+        <div>
+            <a href="https://github.com/jpzingoni" target="_blank">
             <img class="header-icon" src="images/github-icon.png" alt="github-icon">
+            </a>
         </div>
     </header>
+    <div id="buscador-pokemon">
+        <div>
+            <label for="pokemon-list" id="pokemon-list-label">SELECIONAR POKEMON: </label>
+            <select name="pokemon-list" id="pokemon-list">
+                <option value="" id="pokemon-seleccionado"></option>
+            </select>
+        </div>
+        <div>
+            <button id="buscar-pokemon">BUSCAR POKEMON</button>
+        </div>
+    </div>
     <main id="contenedor-pokedex">
         <div>
             <img class="flechas" id="flecha-izquierda"src="images/arrow-left.png" alt="">
@@ -25,17 +44,17 @@
         <div id="borde-contenedor"class="hidden">
             <div id="pokedex" class="content hidden">
                 <div id="textos">
-                    <p id="nombre-pokemon">Nombre </p>
-                    <p id="numero-pokemon">Numero de pokemon</p>
+                    <p id="nombre-pokemon" class="texto-principal">Nombre </p>
+                    <p id="numero-pokemon" class="texto-principal">Numero de pokemon</p>
                 </div>
                 <div id="contenedor-imagenes">
                     <img id="imagen-pokemon" src="" alt="">
                 </div>
                 <div id="stats">
                     <div id="stats-principales">
-                        <p id="altura-pokemon">Altura: </p>
-                        <p id="peso-pokemon">Peso: </p>
-                        <p id="tipo-pokemon">Tipo: </p>
+                        <p id="altura-pokemon" class="texto-secundario">Altura: </p>
+                        <p id="peso-pokemon" class="texto-secundario">Peso: </p>
+                        <p id="tipo-pokemon" class="texto-secundario">Tipo: </p>
                     </div>
                 </div>
             </div>

@@ -23,24 +23,16 @@ let cargarPokemon = ()=> {setTimeout(function(){
         tipoPokemon(POKEMONES.types)
     },1300)}
 
-cargarPokemon()
-
 $FLECHAIZQUIERDA.onclick = function(){
     cambiarPokemonAnterior()
-    const content = document.querySelector(".content");
-    content.style.opacity = 0;
-    setTimeout(function () {
-        // Restaurar la opacidad después de 2 segundos
-        content.style.opacity = 1;
-    }, 1600);
+    cambiarOpacidad()
 }
 
 $FLECHADERECHA.onclick = function(){
     cambiarPokemonSiguiente()
-    const content = document.querySelector(".content");
-    content.style.opacity = 0;
-    setTimeout(function () {
-        // Restaurar la opacidad después de 2 segundos
-        content.style.opacity = 1;
-    }, 1600);
+    cambiarOpacidad()
 }
+
+cargarPokemon()
+setTimeout(() => listaPokemones(LISTAPOKEMONS),1300)
+setTimeout(() => buscarPokemons(), 1300)
