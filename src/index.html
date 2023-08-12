@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <div>
+            <img class="header-icon" src="images/wizards.png" alt="wizard-icon">
+        </div>
+        <div>
+            <img class="header-icon" src="images/github-icon.png" alt="github-icon">
+        </div>
+    </header>
+    <main id="contenedor-pokedex">
+        <div>
+            <img class="flechas" id="flecha-izquierda"src="images/arrow-left.png" alt="">
+        </div>
+        <div>
+            <img id="loading-image" src="images/loading-gif.gif" alt="">
+        </div>
+        <div id="borde-contenedor"class="hidden">
+            <div id="pokedex" class="content hidden">
+                <div id="textos">
+                    <p id="nombre-pokemon">Nombre </p>
+                    <p id="numero-pokemon">Numero de pokemon</p>
+                </div>
+                <div id="contenedor-imagenes">
+                    <img id="imagen-pokemon" src="" alt="">
+                </div>
+                <div id="stats">
+                    <div id="stats-principales">
+                        <p id="altura-pokemon">Altura: </p>
+                        <p id="peso-pokemon">Peso: </p>
+                        <p id="tipo-pokemon">Tipo: </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div>
+            <img class="flechas" id="flecha-derecha"src="images/arrow-right.png" alt="">
+        </div>
+    </main>
+
+    <script src="apiCall.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
